@@ -2,7 +2,72 @@
     <div class="container-fluid">
         <h1 class="heading">Angular CRUD</h1>
             <div class="d-flex">
-                <button class="btn btn-success">Add Employee</button>
+                <button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">Add Employee</button>
             </div>
     </div>
 </nav>
+
+<table class="table table-striped">
+    <thead>
+        <th>Employee ID</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>Mobile No.</th>
+        <th>Email</th>
+        <th>Salary</th>
+        <th>Action</th>
+    </thead>
+    <tbody>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td>
+            <button class="btn btn-info">Edit</button>
+            <button class="btn btn-outline-danger mx-3">Delete</button>
+        </td>
+    </tbody>
+</table>
+
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Employee Details</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form autocomplete="false">
+                <div class="mb-3">
+                  <label for="firstname" class="form-label">First Name</label>
+                  <input type="text" class="form-control" id="firstname" aria-describedby="First Name">
+                </div>
+                <div class="mb-3">
+                  <label for="lastname" class="form-label">Last Name</label>
+                  <input type="text" class="form-control" id="lastname"aria-describedby="Last Name">
+                </div>
+                <div class="mb-3">
+                    <label for="mobileno" class="form-label">Mobile No</label>
+                    <input type="text" class="form-control" id="mobileno"aria-describedby="Mobile Number">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="text" class="form-control" id="email"aria-describedby="Email">
+                </div>
+                <div class="mb-3">
+                    <label for="salary" class="form-label">Salary</label>
+                    <input type="text" class="form-control" id="salary"aria-describedby="Salary">
+                </div>
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Add</button>
+        </div>
+      </div>
+    </div>
+  </div>
