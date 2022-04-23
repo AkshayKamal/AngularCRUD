@@ -1,0 +1,32 @@
+{
+  "posts": [
+    {
+      "firstname": "Manu",
+      "lastname": "s n",
+      "email": "manu@gmail.com",
+      "mobileno": "7012735887",
+      "salary": "25000",
+      "id": 2
+    },
+    {
+      "firstname": "Jinu",
+      "lastname": "M",
+      "email": "jinu@gmail.com",
+      "mobileno": "7845256200",
+      "salary": "10562",
+      "id": 4
+    },
+    {
+      "firstname": "John",
+      "lastname": "Doe",
+      "email": "john@gmail.com",
+      "mobileno": "8542156863",
+      "salary": "258000",
+      "id": 5
+    }
+  ],
+  "comments": [],
+  "profile": {
+    "name": "typicode"
+  }
+}
