@@ -41,26 +41,26 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-            <form autocomplete="false">
+            <form autocomplete="false" [formGroup]="Employee">
                 <div class="mb-3">
                   <label for="firstname" class="form-label">First Name</label>
-                  <input type="text" class="form-control" id="firstname" aria-describedby="First Name">
+                  <input type="text" class="form-control" id="firstname" aria-describedby="First Name" formControlName="firstname">
                 </div>
                 <div class="mb-3">
                   <label for="lastname" class="form-label">Last Name</label>
-                  <input type="text" class="form-control" id="lastname"aria-describedby="Last Name">
+                  <input type="text" class="form-control" id="lastname"aria-describedby="Last Name" formControlName="lastname">
                 </div>
                 <div class="mb-3">
                     <label for="mobileno" class="form-label">Mobile No</label>
-                    <input type="text" class="form-control" id="mobileno"aria-describedby="Mobile Number">
+                    <input type="text" class="form-control" id="mobileno"aria-describedby="Mobile Number" formControlName="mobileno">
                 </div>
                 <div class="mb-3">
                     <label for="email" class="form-label">Email</label>
-                    <input type="text" class="form-control" id="email"aria-describedby="Email">
+                    <input type="text" class="form-control" id="email"aria-describedby="Email" formControlName="email">
                 </div>
                 <div class="mb-3">
                     <label for="salary" class="form-label">Salary</label>
-                    <input type="text" class="form-control" id="salary"aria-describedby="Salary">
+                    <input type="text" class="form-control" id="salary"aria-describedby="Salary" formControlName="salary">
                 </div>
               </form>
         </div>

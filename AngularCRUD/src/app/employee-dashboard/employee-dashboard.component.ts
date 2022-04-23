@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-employee-dashboard',
@@ -7,9 +8,18 @@ import { Component, OnInit } from '@angular/core';
 })
 export class EmployeeDashboardComponent implements OnInit {
 
-  constructor() { }
+  @Input() Employee !:FormGroup
+  constructor(private formbuilder:FormBuilder) { }
 
   ngOnInit(): void {
+    this.Employee=this.formbuilder.group({
+      firstname:['',''],
+      lastname:['',''],
+      email:['',''],
+      mobileno:['',''],
+      salary:['','']
+    })
+
   }
 
 }
